@@ -21,7 +21,7 @@ while True:
     print("Done Receiving")
 
     print("Start delete noise")
-    image = cv2.imread("server_cat.png")
+    image = cv2.imread("server_city.png")
     median_blur = cv2.medianBlur(image, 5)
     cv2.imwrite("server_city.png", median_blur)
     print("Done delete noise")
